@@ -525,10 +525,10 @@ int main() {
     double eta = 0.025;
     Network* x = new Network({ 784,30,30,10 },eta);
 
-    std::string filename = "C://Users//Sriyansh//Downloads//MNIST//train-images-idx3-ubyte//train-images.idx3-ubyte";
-    std::string testfilename = "C://Users//Sriyansh//Downloads//MNIST//t10k-images-idx3-ubyte//t10k-images.idx3-ubyte";
-    std::string testlabels="C://Users//Sriyansh//Downloads//MNIST//t10k-labels-idx1-ubyte//t10k-labels.idx1-ubyte";
-    std::string label_filename = "C://Users//Sriyansh//Downloads//MNIST//train-labels-idx1-ubyte//train-labels.idx1-ubyte";
+    std::string filename = "path to MNIST training dataset";
+    std::string testfilename = "path to testing dataset";
+    std::string testlabels="path to labels for test dataset";
+    std::string label_filename = "path to labels for training set";
 
     std::vector<std::vector<unsigned char>> imagesFile = readIDX3UByteFile(filename);
     std::vector<std::vector<unsigned char>> labelsFile = readLabelFile(label_filename); 
